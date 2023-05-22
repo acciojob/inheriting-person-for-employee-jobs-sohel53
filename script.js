@@ -1,4 +1,5 @@
 // complete this js code
+var name = document
 function Person(name, age) {
 	this.name = name;
     this.age = age;
@@ -18,6 +19,12 @@ Employee.prototype.constructor = Employee;
 Employee.prototype.jobGreet = function() {
   console.log("Hello, my name is " + this.name + ", I am " + this.age + " years old, and my job title is " + this.jobTitle + ".");
 }
+var person = new Person("John Doe", 30);
+var employee = new Employee("Jane Smith", 25, "Software Engineer");
+
+person.greet(); 
+employee.greet(); 
+employee.jobGreet();
 
 // Do not change code below this line
 window.Person = Person;
